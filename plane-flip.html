@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<style>
+			.loader {
+				margin:60px auto;
+				width:100px;
+				height:100px;
+				position:relative;
+				background:#123456;
+
+				-webkit-animation:flip 2s infinite linear;
+			}
+
+
+			@-webkit-keyframes flip {
+				0% {
+					-webkit-transform:perspective(120px) rotateX(0deg) rotateY(0deg);
+					border-radius:50%;
+				}
+				50% {
+					-webkit-transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+					border-radius:0%;
+				}
+				100% {
+					-webkit-transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+					border-radius:50%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="loader"></div>
+	</body>
+</html>

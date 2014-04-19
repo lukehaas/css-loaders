@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<style>
+			body {
+				background:#1E90FF;
+			}
+			.loader,.loader::before,.loader::after {
+				border-radius:50%;
+			}
+			.loader::before,.loader::after {
+				position:absolute;
+			    content:"";
+			}
+			.loader::before {
+				width:5.2em;
+				height:10.2em;
+				background: #1E90FF;
+				border-radius: 10.2em 0 0 10.2em;
+				top:-0.1em;
+				left:-0.1em;
+				transform-origin:5.2em 5.1em;
+				animation:turn 2s infinite ease 1.5s;
+				-webkit-transform-origin:5.2em 5.1em;
+				-webkit-animation:turn 2s infinite ease 1.5s;
+				-moz-transform-origin:5.2em 5.1em;
+				-moz-animation:turn 2s infinite ease 1.5s;
+				-o-transform-origin:5.2em 5.1em;
+				-o-animation:turn 2s infinite ease 1.5s;
+			}
+			.loader {
+				font-size:10px;
+				text-indent:-99999em;
+				margin:60px auto;
+				position:relative;
+				width:10em;
+				height:10em;
+				box-shadow: inset 0 0 0 1em #FFF;
+			}
+			.loader::after {
+				width:5.2em;
+				height:10.2em;
+				background: #1E90FF;
+				border-radius: 0 10.2em 10.2em 0;
+				top:-0.1em;
+				left:5.1em;
+				transform-origin:0px 5.1em;
+				animation:turn 2s infinite ease;
+				-webkit-transform-origin:0px 5.1em;
+				-webkit-animation:turn 2s infinite ease;
+				-moz-transform-origin:0px 5.1em;
+				-moz-animation:turn 2s infinite ease;
+				-o-transform-origin:0px 5.1em;
+				-o-animation:turn 2s infinite ease;
+			}
+			@-webkit-keyframes turn {
+				0% {
+					-webkit-transform:rotate(0deg);
+				}
+				100% {
+					-webkit-transform:rotate(360deg);
+				}
+			}
+			@-moz-keyframes turn {
+				0% {
+					-moz-transform:rotate(0deg);
+				}
+				100% {
+					-moz-transform:rotate(360deg);
+				}
+			}
+			@-o-keyframes turn {
+				0% {
+					-o-transform:rotate(0deg);
+				}
+				100% {
+					-o-transform:rotate(360deg);
+				}
+			}
+			@keyframes turn {
+				0% {
+					transform:rotate(0deg);
+				}
+				100% {
+					transform:rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="loader">Loading...</div>
+	</body>
+</html>

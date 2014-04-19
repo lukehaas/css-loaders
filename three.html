@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<style>
+			.loader {
+				margin:60px auto;
+				width:30px;
+				height:30px;
+				position:relative;
+				background:#123456;
+				border-radius:50%;
+/*
+				-webkit-animation:flip 2s infinite linear;*/
+			}
+			.loader:before {
+				content:" ";
+				border-radius: 50%;
+				background:#123456;
+				width:100%;
+				height:100%;
+				position:absolute;
+				left:-125%;
+				top:0;
+			}
+			.loader:after {
+				content:" ";
+				border-radius: 50%;
+				background:#123456;
+				width:100%;
+				height:100%;
+				position:absolute;
+				left:125%;
+				top:0px;
+
+			}
+
+
+			@-webkit-keyframes flip {
+				0% {
+					-webkit-transform:perspective(120px) rotateX(0deg) rotateY(0deg);
+					border-radius:50%;
+				}
+				50% {
+					-webkit-transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+					border-radius:0%;
+				}
+				100% {
+					-webkit-transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+					border-radius:50%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="loader"></div>
+	</body>
+</html>

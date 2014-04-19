@@ -1,0 +1,14 @@
+body {
+  font-size:62.5%;
+  font-family: 'Lato', sans-serif;
+  background:hsl(185,45%,55%);
+  color:#FFF;
+
+}
+h1 {
+  font-size:4em;
+}
+.inner {
+  width:960px;
+  margin:0 auto;
+}

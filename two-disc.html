@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<style>
+			body {
+				background:#1E90FF;
+			}
+			.loader,.loader:before,.loader:after {
+				box-sizing: border-box;
+			}
+			.loader:before,.loader:after {
+				position:absolute;
+			    content:'';
+			}
+			.loader:before {
+				width:6em;
+				height:6em;
+				left:1.8em;
+				top:0.9em;
+				border-radius:0 50% 50% 0;
+				box-shadow:5.7em 0 0 1.9em #1E90FF;
+				z-index: 0;
+				border-right:0.8em solid #fff;
+				border-bottom:0.8em solid #fff;
+				border-top:0.8em solid #fff;
+			}
+			.loader {
+				border-radius:50%;
+				text-indent:-9999em;
+				margin:6em auto;
+				position:relative;
+				font-size:10px;
+				width:10em;
+				height:10em;
+				z-index: 20;
+				border-left:1em solid #fff;
+				border-top:1em solid #fff;
+				border-bottom:1em solid #fff;
+
+				-webkit-animation:turn 0.8s infinite linear;
+			}
+			.loader:after {
+				background:#1E90FF;
+				width:3.8em;
+				height:7em;
+				left:0.9em;
+				top:0.5em;
+				z-index: 1;
+				border-radius:50% 0 0 50%;
+			}
+			@-webkit-keyframes turn {
+				0% {
+					-webkit-transform:rotate(0deg);
+					transform:rotate(0deg);
+				}
+				100% {
+					-webkit-transform:rotate(360deg);
+					transform:rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="loader">Loading...</div>
+	</body>
+</html>
