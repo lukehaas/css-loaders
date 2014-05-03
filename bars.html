@@ -5,9 +5,8 @@
 				background:dodgerblue;
 			}
 
-			.loader,.loader::before,.loader::after {
+			.loader,.loader:before,.loader:after {
 				background:#FFF;
-				box-shadow:0 0 #FFF;
 				animation:stretch 1s infinite ease-in-out;
 				-webkit-animation:stretch 1s infinite ease-in-out;
 				-moz-animation:stretch 1s infinite ease-in-out;
@@ -15,13 +14,13 @@
 				width:1em;
 				height:4em;
 			}
-			.loader::before,.loader::after {
+			.loader:before,.loader:after {
 				position:absolute;
 				top:0;
-			    content:"";
+			  content:'';
 			}
 
-			.loader::before {
+			.loader:before {
 				left:-1.5em;
 			}
 			.loader {
@@ -29,13 +28,15 @@
 				margin:60px auto;
 				position:relative;
 				font-size:10px;
+
 				animation-delay:0.16s;
 				-webkit-animation-delay:0.16s;
 				-moz-animation-delay:0.16s;
 				-o-animation-delay:0.16s;
 			}
-			.loader::after {
+			.loader:after {
 				left:1.5em;
+
 				animation-delay:0.32s;
 				-webkit-animation-delay:0.32s;
 				-moz-animation-delay:0.32s;
@@ -43,41 +44,42 @@
 			}
 			@-webkit-keyframes stretch {
 				0%,80%,100% {
-					box-shadow:0 0 #FFF;
 					height:4em;
+					box-shadow:0 0 #FFF,0 -2em dodgerblue;
 				}
 				40% {
-					box-shadow:0 -2em #FFF;
 					height:5em;
+					box-shadow:0 -2em #FFF,0 -2em dodgerblue;
+
 				}
 			}
 			@-moz-keyframes stretch {
 				0%,80%,100% {
-					box-shadow:0 0 #FFF;
+					box-shadow:0 0 #FFF,0 -2em dodgerblue;
 					height:4em;
 				}
 				40% {
-					box-shadow:0 -2em #FFF;
+					box-shadow:0 -2em #FFF,0 -2em dodgerblue;
 					height:5em;
 				}
 			}
 			@-o-keyframes stretch {
 				0%,80%,100% {
-					box-shadow:0 0 #FFF;
+					box-shadow:0 0 #FFF,0 -2em dodgerblue;
 					height:4em;
 				}
 				40% {
-					box-shadow:0 -2em #FFF;
+					box-shadow:0 -2em #FFF,0 -2em dodgerblue;
 					height:5em;
 				}
 			}
 			@keyframes stretch {
 				0%,80%,100% {
-					box-shadow:0 0 #FFF;
+					box-shadow:0 0 #FFF,0 -2em dodgerblue;
 					height:4em;
 				}
 				40% {
-					box-shadow:0 -2em #FFF;
+					box-shadow:0 -2em #FFF,0 -2em dodgerblue;
 					height:5em;
 				}
 			}
