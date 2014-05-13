@@ -1,10 +1,16 @@
-- var config = { title: 'Single Element CSS Spinners' }
+- var config = { title: 'Single Element CSS Spinners',description: 'A collection of loading spinners animated with CSS' }
 doctype html
 html(lang="en")
 	head
 		meta(charset="utf-8")
-		meta(name="viewport",content="width=device-width")
 		title=config.title
+		meta(name="viewport",content="width=device-width")
+		meta(name="description",content=config.description)
+		meta(property="og:title",content=config.title)
+		meta(property="og:type",content="website")
+		meta(property="og:description",content=config.description)
+		meta(property="og:image",content="http://projects.lukehaas.me/css-loaders/images/css-loaders-screenshot.jpg")
+		meta(property="og:url",content="http://projects.lukehaas.me/css-loaders/")
 		link(rel="stylesheet",href="css/main.css")
 		link(rel="stylesheet",href="http://fonts.googleapis.com/css?family=Lato:300")
 		- for(var i = 1;i < 9;i++)
