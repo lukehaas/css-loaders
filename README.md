@@ -11,3 +11,15 @@ The aim of this project was to create a set of minimal loading spinners that are
 A strict limit of one element per loader (not including pseudo-elements) was placed on this project based on the belief that something as simple as a loader doesn't deserve more.
 
 Each loader is given a font size in pixels and all other sizes are in ems so to change the size of a loader, just adjust the font-size.
+
+##Browser support
+
+- Chrome 4.0+
+- Firefox 16.0+
+- Opera 15.0+
+- IE 10+
+
+##License
+
+[MIT](https://github.com/lukehaas/css-loaders/blob/step2/LICENSE)
+
