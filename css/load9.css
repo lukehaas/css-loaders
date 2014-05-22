@@ -1,0 +1,51 @@
+.load9 .loader {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #0FF;
+  animation: 1s load9spin infinite;
+}
+.load9 .loader::before, .load9 .loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.load9 .loader::before {
+  background: #F0F;
+  animation: .5s load9blur1 infinite alternate linear;
+}
+.load9 .loader::after {
+  background: #FFF;
+  animation: .5s load9blur2 infinite alternate linear;
+}
+
+@keyframes load9spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load9blur1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+@keyframes load9blur2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
+}
