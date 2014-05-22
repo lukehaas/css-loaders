@@ -415,7 +415,8 @@
     box-shadow: 0 2.5em 0 0 #FFF;
   }
 }
-</textarea></div><div id="load8" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.load8 .loader {
+</textarea></div>
+<div id="load8" class="source hidden"><textarea readonly class="markup"><div class="loader">Loading...</div></textarea><textarea readonly class="css">.load8 .loader {
   margin: 6em auto;
   font-size: 10px;
   position: relative;
@@ -453,7 +454,63 @@
     transform: rotate(360deg);
   }
 }
-</textarea></div></main><footer><div class="inner"><a href="http://twitter.com/lukehaas" target="_blank" class="twitter"><img src="images/me.jpeg" width="45" height="45" alt="Twitter pic"><span>Created by @lukehaas</span></a></div></footer><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="script/main.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+</textarea></div>
+<div id="load9" class="source hidden"><textarea readonly class="markup">
+<div class="loader">Loading...</div>
+</textarea><textarea readonly class="css">
+.load9 .loader {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #0FF;
+  animation: 1s load9spin infinite;
+}
+.load9 .loader::before, .load9 .loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.load9 .loader::before {
+  background: #F0F;
+  animation: .5s load9blur1 infinite alternate linear;
+}
+.load9 .loader::after {
+  background: #FFF;
+  animation: .5s load9blur2 infinite alternate linear;
+}
+
+@keyframes load9spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load9blur1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+@keyframes load9blur2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+</textarea></div>
+</main><footer><div class="inner"><a href="http://twitter.com/lukehaas" target="_blank" class="twitter"><img src="images/me.jpeg" width="45" height="45" alt="Twitter pic"><span>Created by @lukehaas</span></a></div></footer><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="script/main.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
