@@ -13,7 +13,7 @@ html(lang="en")
 		meta(property="og:url",content="http://projects.lukehaas.me/css-loaders/")
 		link(rel="stylesheet",href="css/main.css")
 		link(rel="stylesheet",href="http://fonts.googleapis.com/css?family=Lato:300")
-		- for(var i = 1;i < 9;i++)
+		- for(var i = 1;i < 10;i++)
 			link(rel="stylesheet",href="css/load#{i}.css")
 	body
 		header
@@ -21,7 +21,7 @@ html(lang="en")
 				h1=config.title
 		main
 			div.inner
-				- for(var i = 1;i < 9;i++)
+				- for(var i = 1;i < 10;i++)
 					div(class="load-container load#{i}")
 						div.loader Loading...
 						a(href="#load#{i}") &lt; View Source &gt;
@@ -53,6 +53,9 @@ html(lang="en")
 			div(class="source hidden",id="load8")
 				textarea.markup("readonly"): <div class="loader">Loading...</div>
 				textarea.css("readonly"): include ../css/load8.css
+			div(class="source hidden",id="load9")
+				textarea.markup("readonly"): <div class="loader">Loading...</div>
+				textarea.css("readonly"): include ../css/load9.css
 		footer
 			div.inner
 				a.twitter(href="http://twitter.com/lukehaas",target="_blank")
