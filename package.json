@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://github.com/lukehaas/css-loaders",
   "author": "Luke Haas",
   "license": "BSD",
   "devDependencies": {
@@ -13,5 +14,8 @@
     "grunt-contrib-jade": "~0.11.0",
     "grunt-contrib-less": "^0.11.0",
     "grunt-contrib-watch": "^0.6.1"
+  },
+  "spm": {
+    "main": "./index.css"
   }
 }
