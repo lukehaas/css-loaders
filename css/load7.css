@@ -14,16 +14,16 @@
   font-size: 10px;
   position: relative;
   text-indent: -9999em;
-  -webkit-animation-delay: 0.16s;
-  animation-delay: 0.16s;
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
 }
 .load7 .loader:before {
   left: -3.5em;
 }
 .load7 .loader:after {
   left: 3.5em;
-  -webkit-animation-delay: 0.32s;
-  animation-delay: 0.32s;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
 }
 .load7 .loader:before,
 .loader:after {
