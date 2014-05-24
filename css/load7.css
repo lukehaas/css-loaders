@@ -19,11 +19,11 @@
 }
 .load7 .loader:before {
   left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
 }
 .load7 .loader:after {
   left: 3.5em;
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
 }
 .load7 .loader:before,
 .loader:after {
