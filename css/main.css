@@ -259,3 +259,8 @@ a.twitter span {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .load-container {
+    width: 100%;
+  }
+}

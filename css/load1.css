@@ -18,7 +18,7 @@
 }
 .load1 .loader {
   text-indent: -9999em;
-  margin: 40% auto;
+  margin: 8em auto;
   position: relative;
   font-size: 11px;
   -webkit-animation-delay: 0.16s;
