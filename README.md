@@ -23,3 +23,5 @@ Each loader is given a font size in pixels and all other sizes are in ems so to 
 
 [MIT](https://github.com/lukehaas/css-loaders/blob/step2/LICENSE)
 
+
+[View Project](http://htmlpreview.github.io/?https://github.com/lukehaas/css-loaders/blob/master/index.html)
