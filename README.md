@@ -1,7 +1,7 @@
 [Single Element CSS Spinners](http://projects.lukehaas.me/css-loaders)
 ============
 
-This is a collection of loading spinners animated with CSS.
+This is a collection of loading spinners animated with CSS. See [demo](http://projects.lukehaas.me/css-loaders).
 
 Each spinner consists of a single div with a class of 'loader' and content text of 'Loading...'.
 The text is for screen readers and can be used as a fallback state for older browsers.
@@ -17,9 +17,12 @@ Each loader is given a font size in pixels and all other sizes are in ems so to 
 - Chrome 4.0+
 - Firefox 16.0+
 - Opera 15.0+
+- Safari 4.0+
 - IE 10+
 
 ##License
 
 [MIT](https://github.com/lukehaas/css-loaders/blob/step2/LICENSE)
+
+
 
