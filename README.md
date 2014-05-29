@@ -2,7 +2,7 @@
 
 This is a collection of loading spinners animated with CSS.
 
-Each spinner consists of a single div with a class of 'loader' and content text of 'Loading...'.
+Each spinner consists of a single div with a class of `loader` and content text of **Loading...**.
 The text is for screen readers and can be used as a fallback state for older browsers.
 
 The aim of this project was to create a set of minimal loading spinners that are visually appealing and also convey their intended meaning.
