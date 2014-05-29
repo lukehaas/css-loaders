@@ -13,7 +13,7 @@ Each loader is given a font size in pixels and all other sizes are in ems so to 
 
 ## Demo
 
-![css-loaders-screenshot](https://raw.githubusercontent.com/lukehaas/css-loaders/step2/images/css-loaders-screenshot.jpg)
+[![css-loaders-screenshot](https://raw.githubusercontent.com/lukehaas/css-loaders/step2/images/css-loaders-screenshot.jpg)](http://projects.lukehaas.me/css-loaders)
 
 > [Check it live](http://projects.lukehaas.me/css-loaders).
 
