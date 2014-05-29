@@ -15,7 +15,7 @@ Each loader is given a font size in pixels and all other sizes are in ems so to 
 
 ![css-loaders-screenshot](https://raw.githubusercontent.com/lukehaas/css-loaders/step2/images/css-loaders-screenshot.jpg)
 
-> [Check it live](http://msp-brazil.github.io/bing-maps-element).
+> [Check it live](http://projects.lukehaas.me/css-loaders).
 
 ## Browser Support
 
