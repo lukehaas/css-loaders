@@ -211,13 +211,6 @@ h1 {
 .load-container a:visited:hover {
   text-decoration: underline;
 }
-.loader {
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-}
 .github img {
   position: absolute;
   top: 0;
