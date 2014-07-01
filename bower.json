@@ -1,0 +1,25 @@
+{
+  "name": "css-loaders",
+  "version": "1.0.0",
+  "homepage": "https://github.com/lukehaas/css-loaders",
+  "authors": [
+    "Luke Haas <lukehaas7@gmail.com>"
+  ],
+  "description": "A collection of single element loading spinners, animated with CSS ",
+  "main": "css",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "CSS",
+    "spinner",
+    "loader"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests"
+  ]
+}
