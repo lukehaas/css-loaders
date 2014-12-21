@@ -145,7 +145,8 @@ main {
 }
 .source {
   background: #FFF;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   width: 600px;
   height: 500px;
   position: absolute;
@@ -157,12 +158,15 @@ main {
 }
 .source textarea {
   padding: 1em;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   border: 0 none;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+          border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+          border-top-right-radius: 10px;
   outline: 0 none;
   font-family: arial, sans-serif;
   font-size: 1.2em;
@@ -173,7 +177,8 @@ main {
 }
 .source .css {
   height: 84%;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
 }
 .hidden {
   display: none;
@@ -193,8 +198,9 @@ h1 {
   float: left;
   position: relative;
   overflow: hidden;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .load-container a:link,
 .load-container a:visited {
@@ -231,7 +237,8 @@ a.twitter:visited:hover {
   text-decoration: underline;
 }
 a.twitter img {
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   float: left;
   border: 1px solid #bbb;
   padding: 0.1em;
@@ -258,9 +265,10 @@ a.twitter span {
   height: auto;
   margin: 1em auto;
   overflow: visible;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -webkit-animation: none;
-  animation: none;
+          animation: none;
 }
 .no-cssanimations .load-container .loader:before,
 .no-cssanimations .load-container .loader:after {
