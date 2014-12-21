@@ -8,18 +8,14 @@
   border-radius:50%;
   margin:0.8em auto;
   position:relative;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-animation:load6 1.7s infinite ease;
   animation:load6 1.7s infinite ease;
 }
-@-webkit-keyframes load6 {.load6-frames;}
+
 @keyframes load6 {.load6-frames;}
 
 .load6-frames() {
   0% {
-  -webkit-transform:rotate(0deg);
   transform:rotate(0deg);
   box-shadow:
   0 -0.83em 0 -0.4em #ffffff,
@@ -62,7 +58,6 @@
     -0.82em -0.09em 0 -0.477em #ffffff;
   }
   100% {
-    -webkit-transform:rotate(360deg);
     transform:rotate(360deg);
     box-shadow:
     0 -0.83em 0 -0.4em #ffffff,
