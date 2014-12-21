@@ -23,6 +23,17 @@ module.exports = function(grunt) {
         ext: '.css'
       }
     },
+	  autoprefixer: {
+	    options: {
+				browsers: ['last 2 versions', 'Opera >= 15', 'Chrome >= 4', 'Firefox >= 16', 'Safari >= 4']
+	    },
+	    css: {
+	      expand: true,
+	      flatten: true,
+	      src: 'css/*.css',
+	      dest: 'css/'
+	    }
+	  },
     watch: {
       files: ['less/**/*.less','jade/**/*.jade'],
       tasks: ['default']
@@ -35,6 +46,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['less','jade','watch']);
+  grunt.registerTask('default', ['less', 'autoprefixer', 'jade','watch']);
 
 };
