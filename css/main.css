@@ -129,7 +129,7 @@ table {
 body {
   font-size: 62.5%;
   font-family: 'Lato', sans-serif;
-  background: #0dcecb;
+  background: #0dc5c1;
   color: #FFF;
 }
 main {
@@ -247,6 +247,61 @@ a.twitter span {
 .link:hover {
   text-decoration: underline;
 }
+@media (max-width: 960px) {
+  .inner {
+    width: 480px;
+  }
+}
+@media (max-width: 500px) {
+  .inner {
+    width: 100%;
+  }
+  .load-container {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer #carbonads {
+    float: none;
+    margin: 20px auto;
+  }
+  footer #carbonads a {
+    float: none;
+  }
+  footer a.twitter:link,
+  footer a.twitter:visited {
+    display: block;
+    margin-top: 20px;
+    float: none;
+  }
+  footer a.twitter:link img,
+  footer a.twitter:visited img {
+    float: none;
+  }
+  footer a.twitter:link span,
+  footer a.twitter:visited span {
+    vertical-align: top;
+  }
+}
+#carbonads {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  float: right;
+  width: 130px;
+}
+#carbonads a {
+  float: left;
+  clear: left;
+  color: white;
+  text-decoration: none;
+}
+#carbonads a:hover {
+  text-decoration: underline;
+}
+/* Import this if you are using modernizr (recommended) 
+It means that loaders will fallback to a text state of simply saying "Loading..." in older browsers
+*/
 .no-cssanimations .load-container .loader {
   text-indent: 0;
   text-align: center;
@@ -265,17 +320,4 @@ a.twitter span {
 .no-cssanimations .load-container .loader:before,
 .no-cssanimations .load-container .loader:after {
   display: none;
-}
-@media (max-width: 960px) {
-  .inner {
-    width: 480px;
-  }
-}
-@media (max-width: 500px) {
-  .inner {
-    width: 100%;
-  }
-  .load-container {
-    width: 100%;
-  }
 }

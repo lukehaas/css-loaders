@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-@bg: hsl(179,88%,43%);
+@bg: hsl(179,88%,41%);
 
 body {
   font-size:62.5%;
@@ -160,25 +160,7 @@ a.twitter span {
   	text-decoration:underline;
   }
 }
-.no-cssanimations .load-container .loader {
-	text-indent:0;
-	text-align:center;
-	color:#FFF;
-	font-size:17px;
-	background:none;
-	border:0 none;
-	width:auto;
-	height:auto;
-	margin:1em auto;
-	overflow:visible;
-	box-shadow:none;
-	-webkit-animation:none;
-	animation:none;
-}
-.no-cssanimations .load-container .loader:before,
-.no-cssanimations .load-container .loader:after {
-	display:none;
-}
+
 @media (max-width:960px) {
 	.inner {
 		width:480px;
@@ -191,6 +173,46 @@ a.twitter span {
 	.load-container{
 		width:100%;
 	}
+	footer {
+		text-align:center;
+		#carbonads {
+			float:none;
+			margin:20px auto;
+			a {
+				float:none;
+			}
+		}
+		a.twitter:link,
+		a.twitter:visited {
+			display:block;
+			margin-top:20px;
+			float:none;
+			img {
+				float:none;
+			}
+			span {
+				vertical-align:top;
+			}
+		}
+	}
 }
 
 
+#carbonads {
+	margin-top:30px;
+	margin-bottom:10px;
+	float:right;
+	width:130px;
+
+	a {
+		float:left;
+		clear:left;
+		color:white;
+		text-decoration:none;
+		&:hover {
+			text-decoration:underline;
+		}
+	}
+}
+
+@import "fallback";

@@ -1,1 +1,7 @@
 node_modules/
+css/
+images/
+index.html
+jade/
+script/
+less/main.less

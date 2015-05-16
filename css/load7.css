@@ -10,8 +10,8 @@
   animation: load7 1.8s infinite ease-in-out;
 }
 .load7 .loader {
-  margin: 8em auto;
   font-size: 10px;
+  margin: 80px auto;
   position: relative;
   text-indent: -9999em;
   -webkit-transform: translateZ(0);
@@ -29,7 +29,7 @@
   left: 3.5em;
 }
 .load7 .loader:before,
-.loader:after {
+.load7 .loader:after {
   content: '';
   position: absolute;
   top: 0;
@@ -41,7 +41,7 @@
     box-shadow: 0 2.5em 0 -1.3em #ffffff;
   }
   40% {
-    box-shadow: 0 2.5em 0 0 #FFF;
+    box-shadow: 0 2.5em 0 0 #ffffff;
   }
 }
 @keyframes load7 {
@@ -51,6 +51,6 @@
     box-shadow: 0 2.5em 0 -1.3em #ffffff;
   }
   40% {
-    box-shadow: 0 2.5em 0 0 #FFF;
+    box-shadow: 0 2.5em 0 0 #ffffff;
   }
 }

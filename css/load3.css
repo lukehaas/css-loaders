@@ -1,6 +1,6 @@
 .load3 .loader {
   font-size: 10px;
-  margin: 5em auto;
+  margin: 50px auto;
   text-indent: -9999em;
   width: 11em;
   height: 11em;
@@ -21,7 +21,7 @@
 .load3 .loader:before {
   width: 50%;
   height: 50%;
-  background: #FFF;
+  background: #ffffff;
   border-radius: 100% 0 0 0;
   position: absolute;
   top: 0;
@@ -29,7 +29,7 @@
   content: '';
 }
 .load3 .loader:after {
-  background: #0dcecb;
+  background: #0dc5c1;
   width: 75%;
   height: 75%;
   border-radius: 50%;
