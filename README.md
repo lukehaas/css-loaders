@@ -11,6 +11,38 @@ A strict limit of one element per loader (not including pseudo-elements) was pla
 
 Each loader is given a font size in pixels and all other sizes are in ems so to change the size of a loader, just adjust the font-size.
 
+## Use it in your project
+
+If you want to include the `CSS loaders` immediately inside your project, just grab the minified css version inside the `dist` folder. Otherwise you can also use the `less` or `sass` version present inside `src/less` or `src/sass`.
+
+A demo version using the `CSS loaders` is also present under the `demo` folder so you can have a look at the html code.
+
+## Develop
+
+This project uses `npm` and `Grunt`. If you want to compile the source code and generating new `sass` or `less` version of the library, first clone this repository on your local machine with:
+
+    git clone https://github.com/lukehaas/css-loaders.git
+
+Then, make sure to install all the dependencies running:
+
+    npm install
+
+Install Grunt globally if you don't have that already with:
+
+    npm install -g grunt-cli
+
+Now you can compile your own version of the library running:
+
+    grunt
+
+For compiling the `less` version of the library into the `dist` folder
+
+or
+
+    grunt compile:sass
+
+For compiling the `sass` version of the library into the `dist` folder
+
 ## Demo
 
 [![css-loaders-screenshot](https://raw.githubusercontent.com/lukehaas/css-loaders/step2/images/css-loaders-screenshot.jpg)](http://projects.lukehaas.me/css-loaders)
@@ -38,4 +70,3 @@ For detailed changelog, check [Releases](https://github.com/lukehaas/css-loaders
 ## License
 
 [MIT License](https://github.com/lukehaas/css-loaders/blob/step2/LICENSE)
-

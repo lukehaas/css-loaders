@@ -3,38 +3,55 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    jade: {
-      compile: {
-          files: [{
-              expand: true,
-              cwd: 'jade/',
-              src: ['**/*.jade'],
-              dest: '',
-              ext: '.html'
-          }]
-      }
+    // clean
+    clean: {
+      dir: ['./src/css', './dist']
     },
+    // less
     less: {
-      src: {
-        expand: true,
-        cwd: 'less/',
-        src: ['**/*.less'],
-        dest: 'css/',
-        ext: '.css'
+      development: {
+        options: {
+          sourceMap: true
+        },
+        files: {
+          './src/css/css-loaders.css': './src/less/main.less',
+        }
+      },
+      production: {
+        options: {
+          compress: true,
+          sourceMap: true
+        },
+        files: {
+          './dist/css-loaders.min.css': './src/less/main.less',
+        }
       }
     },
-    watch: {
-      files: ['less/**/*.less','jade/**/*.jade'],
-      tasks: ['default']
+    // sass
+    sass: {
+      development: {
+        options: {
+          style: 'expanded'
+        },
+        files: {
+          './src/css/css-loaders.css': './src/sass/main.scss'
+        }
+      },
+      production: {
+        options: {
+          style: 'compressed'
+        },
+        files: {
+          './dist/css-loaders.min.css': './src/sass/main.scss'
+        }
+      }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-jade');
-
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
-  grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask('default', ['less','jade','watch']);
-
+  grunt.registerTask('default', ['clean', 'less']);
+  grunt.registerTask('compile:sass', ['clean', 'sass']);
 };

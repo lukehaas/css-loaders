@@ -1,0 +1,39 @@
+body {
+  background-color: #0dc5c1;
+}
+
+h1 {
+  color: #eee;
+  font-size: 42px;
+  padding: 20px 0;
+  margin: 10px 0 30px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.inner {
+  max-width: 940px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.load-container {
+  height: 270px;
+  width: 25%;
+  min-width: 230px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+xmp {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
