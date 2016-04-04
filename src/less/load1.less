@@ -18,6 +18,7 @@
   animation-delay:-0.32s;
 }
 .load1 .loader {
+  color:@foreground;
   text-indent:-9999em;
   margin:88px auto;
   position:relative;
@@ -37,11 +38,11 @@
 
 .load1-frames() {
   0%,80%,100% {
-    box-shadow:0 0 @foreground;
+    box-shadow:0 0;
     height:4em;
   }
   40% {
-    box-shadow:0 -2em @foreground;
+    box-shadow:0 -2em;
     height:5em;
   }
 }
