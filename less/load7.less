@@ -10,6 +10,7 @@
   animation:load7 1.8s infinite ease-in-out;
 }
 .load7 .loader {
+  color:@foreground;
   font-size:10px;
   margin:80px auto;
   position:relative;
@@ -39,9 +40,9 @@
 
 .load7-frames() {
   0%,80%,100% {
-    box-shadow:0 2.5em 0 -1.3em @foreground;
+    box-shadow:0 2.5em 0 -1.3em;
   }
   40% {
-    box-shadow:0 2.5em 0 0 @foreground;
+    box-shadow:0 2.5em 0 0;
   }
 }
