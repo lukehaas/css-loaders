@@ -1,15 +1,17 @@
 @foreground: #fff;
 
 .load7 .loader:before,.load7 .loader:after,.load7 .loader {
-  border-radius:50%;
-  width:2.5em;
-  height:2.5em;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
   -webkit-animation:load7 1.8s infinite ease-in-out;
   animation:load7 1.8s infinite ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  border-radius:50%;
+  height:2.5em;
+  width:2.5em;
 }
 .load7 .loader {
+  -webkit-animation-delay:-0.16s;
+  animation-delay:-0.16s;
   color:@foreground;
   font-size:10px;
   margin:80px auto;
@@ -18,13 +20,11 @@
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-animation-delay:-0.16s;
-  animation-delay:-0.16s;
 }
 .load7 .loader:before {
-  left:-3.5em;
   -webkit-animation-delay:-0.32s;
   animation-delay:-0.32s;
+  left:-3.5em;
 }
 .load7 .loader:after {
   left:3.5em;

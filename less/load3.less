@@ -2,45 +2,48 @@
 @foreground: #FFF;
 
 .load3 .loader {
-  font-size:10px;
-  margin:50px auto;
-  text-indent:-9999em;
-  width:11em;
-  height:11em;
-  border-radius:50%;
+  -webkit-animation:load3 1.4s infinite linear;
+  animation:load3 1.4s infinite linear;
   background: @foreground;
   background: -moz-linear-gradient(left,  fade(@foreground,100%) 10%, fade(@foreground,0%) 42%);
   background: -webkit-linear-gradient(left,  fade(@foreground,100%) 10%,fade(@foreground,0%) 42%);
   background: -o-linear-gradient(left,  fade(@foreground,100%) 10%,fade(@foreground,0%) 42%);
   background: -ms-linear-gradient(left,  fade(@foreground,100%) 10%,fade(@foreground,0%) 42%);
   background: linear-gradient(to right,  fade(@foreground,100%) 10%,fade(@foreground,0%) 42%);
+  border-radius:50%;
+  font-size:10px;
+  height:11em;
+  margin:50px auto;
   position: relative;
-  -webkit-animation:load3 1.4s infinite linear;
-  animation:load3 1.4s infinite linear;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
+  text-indent:-9999em;
+  width:11em;
 }
 .load3 .loader:before {
-  width:50%;
-  height:50%;
   background: @foreground;
   border-radius: 100% 0 0 0;
+  content:'';
+  height:50%;
+  left:0;
   position:absolute;
   top:0;
-  left:0;
-  content:'';
+  width:50%;
 }
 
 .load3 .loader:after {
   background:@background;
-  width:75%;
-  height:75%;
   border-radius:50%;
+  bottom: 0;
   content:'';
+  height:75%;
+  left: 0;
   margin:auto;
   position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  right: 0;
+  top: 0;
+  width:75%;
 }
 @-webkit-keyframes load3 {.load3-frames;}
 @keyframes load3 {.load3-frames;}
