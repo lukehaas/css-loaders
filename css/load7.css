@@ -1,6 +1,6 @@
+.load7 .loader,
 .load7 .loader:before,
-.load7 .loader:after,
-.load7 .loader {
+.load7 .loader:after {
   border-radius: 50%;
   width: 2.5em;
   height: 2.5em;
@@ -21,6 +21,12 @@
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
+.load7 .loader:before,
+.load7 .loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
 .load7 .loader:before {
   left: -3.5em;
   -webkit-animation-delay: -0.32s;
@@ -28,12 +34,6 @@
 }
 .load7 .loader:after {
   left: 3.5em;
-}
-.load7 .loader:before,
-.load7 .loader:after {
-  content: '';
-  position: absolute;
-  top: 0;
 }
 @-webkit-keyframes load7 {
   0%,

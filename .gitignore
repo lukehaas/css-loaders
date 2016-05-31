@@ -5,3 +5,4 @@ index.html
 jade/
 script/
 less/main.less
+.sass-cache

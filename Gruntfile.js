@@ -23,6 +23,18 @@ module.exports = function(grunt) {
         ext: '.css'
       }
     },
+    sass: {
+      options: {
+        sourcemap:'none'
+      },
+      src: {
+        expand: true,
+        cwd: 'sass/',
+        src: ['**/*.scss'],
+        dest: 'css/',
+        ext: '.css'
+      }
+    },
     watch: {
       files: ['less/**/*.less','jade/**/*.jade'],
       tasks: ['default']
@@ -33,8 +45,11 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-less');
 
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['less','jade','watch']);
+
 
 };

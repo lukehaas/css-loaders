@@ -12,6 +12,7 @@
     "grunt": "~0.4.4",
     "grunt-contrib-jade": "~0.11.0",
     "grunt-contrib-less": "^0.11.0",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1"
   }
 }
