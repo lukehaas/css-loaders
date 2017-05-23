@@ -1,0 +1,34 @@
+/* Import this if you are using modernizr (recommended)
+It means that loaders will fallback to a text state of simply saying "Loading..." in older browsers
+*/
+
+.no-cssanimations {
+
+  .load-container {
+
+    .loader {
+      -webkit-animation:none;
+      animation:none;
+      background:none;
+      border:0 none;
+      box-shadow:none;
+      color:#FFF;
+      font-size:17px;
+      height:auto;
+      margin:1em auto;
+      overflow:visible;
+      text-align:center;
+      text-indent:0;
+      width:auto;
+
+      &:before,
+      &:after {
+        display:none;
+      }
+
+    }
+
+  }
+
+}
+

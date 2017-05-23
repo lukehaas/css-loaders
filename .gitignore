@@ -1,7 +1,8 @@
 node_modules/
-css/
+css/main.css
 images/me.jpeg
 index.html
 jade/
 script/
 less/main.less
+.sass-cache

@@ -1,0 +1,70 @@
+$background: hsl(179,88%,41%);
+$foreground: #FFF;
+
+.load3 {
+
+  .loader {
+    -webkit-animation:load3 1.4s infinite linear;
+    animation:load3 1.4s infinite linear;
+    background: $foreground;
+    background: -moz-linear-gradient(left,  rgba($foreground,1) 10%, rgba($foreground,0) 42%);
+    background: -webkit-linear-gradient(left,  rgba($foreground,1) 10%,rgba($foreground,0) 42%);
+    background: -o-linear-gradient(left,  rgba($foreground,1) 10%,rgba($foreground,0) 42%);
+    background: -ms-linear-gradient(left,  rgba($foreground,1) 10%,rgba($foreground,0) 42%);
+    background: linear-gradient(to right,  rgba($foreground,1) 10%,rgba($foreground,0) 42%);
+    border-radius:50%;
+    font-size:10px;
+    height:11em;
+    margin:50px auto;
+    position: relative;
+    text-indent:-9999em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    width:11em;
+
+    &:before {
+      background: $foreground;
+      border-radius: 100% 0 0 0;
+      content:'';
+      height:50%;
+      left:0;
+      position:absolute;
+      top:0;
+      width:50%;
+    }
+
+    &:after {
+      background:$background;
+      border-radius:50%;
+      bottom: 0;
+      content:'';
+      height:75%;
+      left: 0;
+      margin:auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width:75%;
+    }
+
+  }
+
+}
+
+@mixin load3-frames() {
+
+  0% {
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
+
+}
+
+@-webkit-keyframes load3 {@include load3-frames;}
+@keyframes load3 {@include load3-frames;}

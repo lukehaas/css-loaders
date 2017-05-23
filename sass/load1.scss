@@ -1,0 +1,63 @@
+$foreground: #FFF;
+
+.load1 {
+
+  .loader,
+  .loader:before,
+  .loader:after {
+    -webkit-animation:load1 1s infinite ease-in-out;
+    animation:load1 1s infinite ease-in-out;
+    background:$foreground;
+    height:4em;
+    width:1em;
+  }
+
+  .loader {
+    -webkit-animation-delay:-0.16s;
+    animation-delay:-0.16s;
+    color:$foreground;
+    font-size:11px;
+    margin:88px auto;
+    position:relative;
+    text-indent:-9999em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+
+    &:before,
+    &:after {
+      content:'';
+      position:absolute;
+      top:0;
+    }
+
+    &:before {
+      -webkit-animation-delay:-0.32s;
+      animation-delay:-0.32s;
+      left:-1.5em;
+    }
+
+    &:after {
+      left:1.5em;
+    }
+
+  }
+
+}
+
+@mixin load1-frames {
+  0%,
+  80%,
+  100% {
+    box-shadow:0 0;
+    height:4em;
+  }
+
+  40% {
+    box-shadow:0 -2em;
+    height:5em;
+  }
+}
+
+@-webkit-keyframes load1 {@include load1-frames;}
+@keyframes load1 {@include load1-frames;}
