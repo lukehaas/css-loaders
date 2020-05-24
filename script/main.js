@@ -1,8 +1,7 @@
 $(function () {
-	var bg = "#0dc5c1";
+	var bg = "#0dc5c1ff";
 	var fg = "#ffffffff";
 	var fgrgb = "255, 255, 255";
-	let isFirstChange = true
 
 	if (Modernizr.inputtypes.color) {
 		$("html").addClass("colorpicker");
@@ -15,7 +14,8 @@ $(function () {
 
 		if ($(this).attr("id") === "bg-color") {
 
-			if (color == fg) {
+			// So that the background and foreground have different format and differ while switching
+			if (fg.length === 7) {
 				color += 'ff'
 			}
 
@@ -36,22 +36,28 @@ $(function () {
 			var load3CSS = $("#load3").find("textarea.css").val();
 
 			//change BG in loader1 and loader2
-			var regex = new RegExp(bg, "g");
+			var regex = new RegExp(bg + "\\s", "g");
+			var regex2 = new RegExp(bg + ";", "g");
 
-			load2CSS = load2CSS.replace(regex, color);
+			load2CSS = load2CSS.replace(regex, color + ' ')
+			load2CSS = load2CSS.replace(regex2, color + ';')
 
-			$("#load2").find("textarea.css").val(load2CSS);
+			$("#load2").find("textarea.css").val(load2CSS)
 
-			load3CSS = load3CSS.replace(regex, color);
+			load3CSS = load3CSS.replace(regex, color + ' ')
+			load3CSS = load3CSS.replace(regex2, color + ';')
 
-			$("#load3").find("textarea.css").val(load3CSS);
+			$("#load3").find("textarea.css").val(load3CSS)
 
-			bg = color;
+			bg = color
 
 		} else if ($(this).attr("id") === "fg-color") {
 			$("#fg-styles").remove();
 
-			color += 'ff'
+			// So that the foreground and background differ while switching
+			if (bg.length === 7) {
+				color += 'ff'
+			}
 
 			var styles = {
 				'body': {
@@ -96,7 +102,8 @@ $(function () {
 
 			//replace here
 			var loadCSS;
-			var regex2 = new RegExp(fg, "g");
+			var regex2 = new RegExp(fg + "\\s", 'g');
+			var regex4 = new RegExp(fg + ";", 'g');
 			var regex3 = new RegExp(fgrgb, "g");
 
 			var load5CSS;
@@ -104,7 +111,8 @@ $(function () {
 
 				loadCSS = $(this).find("textarea.css").val();
 
-				loadCSS = loadCSS.replace(regex2, color).replace(regex3, convertHex(color));
+				loadCSS = loadCSS.replace(regex2, color + ' ').replace(regex3, convertHex(color));
+				loadCSS = loadCSS.replace(regex4, color + ';')
 
 				$(this).find("textarea.css").val(loadCSS);
 
@@ -114,7 +122,7 @@ $(function () {
 
 			});
 
-			fg = color;
+			fg = color
 			fgrgb = convertHex(color);
 			//add loader5 css into head
 
