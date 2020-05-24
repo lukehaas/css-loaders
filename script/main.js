@@ -2,6 +2,7 @@ $(function () {
 	var bg = "#0dc5c1";
 	var fg = "#ffffffff";
 	var fgrgb = "255, 255, 255";
+	let isFirstChange = true
 
 	if (Modernizr.inputtypes.color) {
 		$("html").addClass("colorpicker");
@@ -13,6 +14,10 @@ $(function () {
 		var color = $(this).val();
 
 		if ($(this).attr("id") === "bg-color") {
+
+			if (color == fg) {
+				color += 'ff'
+			}
 
 			$("#bg-styles").remove();
 
@@ -38,16 +43,15 @@ $(function () {
 			$("#load2").find("textarea.css").val(load2CSS);
 
 			load3CSS = load3CSS.replace(regex, color);
-			console.log(load3CSS)
 
 			$("#load3").find("textarea.css").val(load3CSS);
 
 			bg = color;
 
-			console.log(load3CSS)
-
 		} else if ($(this).attr("id") === "fg-color") {
 			$("#fg-styles").remove();
+
+			color += 'ff'
 
 			var styles = {
 				'body': {
@@ -138,15 +142,18 @@ $(function () {
 	});
 
 	function addCSS(styles, id, extra) {
-		var css = "";
+		var css = '';
 		for (var k in styles) {
 			css += k + JSON.stringify(styles[k]).replace(/"/g, "").replace(/,/g, ";").replace(/(\(.*?);(.*?\))/g, function (v) { return v.replace(/;/g, ","); });
 		}
+
 		if (extra) {
 			css += extra;
 		}
+
 		$("<style>").prop({ "type": "text/css", "id": id }).html(css).appendTo("head");
 	}
+
 	function convertHex(hex) {
 		hex = hex.replace('#', '');
 		r = parseInt(hex.substring(0, 2), 16);
