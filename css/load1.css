@@ -37,23 +37,19 @@
   0%,
   80%,
   100% {
-    box-shadow: 0 0;
-    height: 4em;
+    box-shadow: 0 0, 0 0;
   }
   40% {
-    box-shadow: 0 -2em;
-    height: 5em;
+    box-shadow: 0 -2em, 0 2em;
   }
 }
 @keyframes load1 {
   0%,
   80%,
   100% {
-    box-shadow: 0 0;
-    height: 4em;
+    box-shadow: 0 0, 0 0;
   }
   40% {
-    box-shadow: 0 -2em;
-    height: 5em;
+    box-shadow: 0 -2em, 0 2em;
   }
 }
