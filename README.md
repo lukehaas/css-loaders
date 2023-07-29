@@ -19,9 +19,14 @@ Each loader is given a font size in pixels and all other sizes are in ems so to 
 
 ## Browser Support
 
-![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png)
+![Microsoft Edge](https://github.com/lukehaas/css-loaders/assets/122084921/fc5bf859-5d77-401b-9e9e-077c5cb396f8)
+ | ![Chrome](https://github.com/lukehaas/css-loaders/assets/122084921/7c79c75a-968e-462a-8c35-e8975ad55d12)
+ | ![Firefox](https://github.com/lukehaas/css-loaders/assets/122084921/a8667881-ac7b-4dff-b1a5-4853f2721723)
+ | ![Opera](https://github.com/lukehaas/css-loaders/assets/122084921/54c61fa4-04f3-4223-a262-452f9e58b9a5)
+ | ![Safari](https://github.com/lukehaas/css-loaders/assets/122084921/b791518d-eefc-4687-b705-d1c9145cf0fa)
+
 --- | --- | --- | --- | --- |
-IE 10+ ✔ | Chrome 4.0+ ✔ | Firefox 16.0+ ✔ | Opera 15.0+ ✔ | Safari 4.0+ ✔ |
+ME 10+ ✔ | Chrome 4.0+ ✔ | Firefox 16.0+ ✔ | Opera 15.0+ ✔ | Safari 4.0+ ✔ |
 
 ## Contributing
 
