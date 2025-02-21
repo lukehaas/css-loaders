@@ -39,10 +39,12 @@
   100% {
     box-shadow: 0 0;
     height: 4em;
+    margin-bottom:8em;
   }
   40% {
     box-shadow: 0 -2em;
     height: 5em;
+    margin-bottom:7em;
   }
 }
 @keyframes load1 {
@@ -51,9 +53,11 @@
   100% {
     box-shadow: 0 0;
     height: 4em;
+    margin-bottom:8em;
   }
   40% {
     box-shadow: 0 -2em;
     height: 5em;
+    margin-bottom:7em;
   }
 }
