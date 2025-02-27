@@ -1,0 +1,43 @@
+.wrapper{
+    width: 700px;
+    margin: 0 auto;
+}
+.row{
+    text-align: center;
+    padding: 50px 0;
+}
+.span{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color:rgb(13, 197, 193);
+    vertical-align: middle;
+    border-radius: 1px;
+}
+.typing_loader{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: typing 1s linear infinite alternate;
+    position: absolute;
+    margin: 80px auto;
+    margin-left: 50px;
+}
+
+@keyframes typing{
+    0%{
+        background-color: rgba(255,255,255, 1);
+        box-shadow: 36px 0px 0px 0px rgba(255,255,255, 0.2), 
+                    72px 0px 0px 0px rgba(255,255,255, 0.2);
+    }
+    25%{
+        background-color: rgba(255,255,255, 0.4);
+        box-shadow: 37px 0px 0px 0px rgba(255,255,255, 2), 
+                    72px 0px 0px 0px rgba(255,255,255, 0.2);
+    }
+    75%{
+        background-color: rgba(255,255,255, 0.4);
+        box-shadow: 36px 0px 0px 0px rgba(255,255,255, 0.2), 
+                    72px 0px 0px 0px rgba(255,255,255, 1);
+    }
+}
